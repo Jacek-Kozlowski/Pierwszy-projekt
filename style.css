@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+
+:root {
+
+    font-family: 'Karla', sans-serif;
+    --cyan:hsl(179, 62%, 43%);
+    --d-cyan:hsl(179, 62%, 40%);
+    --b-yellow:hsl(71, 73%, 54%);
+    --l-gray:hsl(204, 43%, 93%);
+    --g-blue:hsl(218, 22%, 67%);
+    font-size:16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:70%;
+    max-height: 80%;
+    margin: 0 auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 0px black;
+
+}
+h2 {
+
+    color:var(--cyan);
+    font-size:35px;
+    font-weight: 700;
+}
+h3 {
+    color: var(--l-gray);
+}
+.subtitle {
+
+    color:var(--b-yellow);
+    font-weight: 700;
+}
+.text {
+    color: var(--g-blue);
+    font-size:16px;
+}
+.price {
+    font-size:30px;
+    font-weight: 700;
+    color:var(--l-gray);
+    margin-right:5px;
+}
+.box {
+
+    padding: 40px;
+    margin: 0;
+
+}
+.text1 {
+    width: 70%;
+}
+.box2 {
+    width:50%;
+    background-color: var(--d-cyan);
+    border-radius:0px 0px 0px 10px;
+}
+.box2-bottom {
+
+    color:var(--l-gray);
+}
+.btn {
+    padding:15px;
+    background-color: var(--b-yellow);
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 8px 0px black;
+    font-size: 22px;
+    font-family:'Karla', sans-serif;
+    font-weight: 700;
+    color:var(--l-gray);
+    cursor: pointer;
+    margin-top:20px;
+    
+}
+
+.box3 {
+    width: 50%;
+    background-color: var(--cyan);
+    border-radius:0px 0px 10px 0px;
+
+}
+.txt-right {
+
+    max-width: 57%;
+    line-height: 23px;
+    color:var(--l-gray);
+}
+@media (max-width:1255px) {
+
+    .container {
+        margin:0 auto;
+        width:100%;
+    }
+}
+
+@media (max-width:725px) {
+    .container {
+        height: 100%;
+    }
+    .box2 , .box3 {
+        width: 100%;
+    }
+    .btn {
+        width:60%;
+    }
+    .box2 {
+        border-radius: 0;
+    }
+    .box3 {
+        border-radius: 0px 0px 10px 10px;
+
+    }
+}
+@media (max-width:580px) {
+
+    .btn {
+        width: 100%;
+    }
+}
